@@ -10,7 +10,7 @@ import MyRoutines from "./components/MyRoutines";
 
 function App() {
   return (
-    <div>
+    <div id="container">
       <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
