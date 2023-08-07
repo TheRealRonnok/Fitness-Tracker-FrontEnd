@@ -47,8 +47,8 @@ function Routines() {
   }, [forceRender]);
 
   return (
-    <section className="postResults">
-      <div id="centerHeader">
+    <section>
+      <div>
         {routines.length < 2 ? (
           <h2>{routines.length} ROUTINE</h2>
         ) : (
@@ -56,9 +56,7 @@ function Routines() {
         )}
       </div>
       {routines.map((item, idx) => (
-        <div key={idx} className="oneMsg">
-          {writeOneRoutine(item)}
-        </div>
+        <div key={idx}>{writeOneRoutine(item)}</div>
       ))}
     </section>
   );

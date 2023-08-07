@@ -35,8 +35,8 @@ function Activities() {
   }, [forceRender]);
 
   return (
-    <section className="postResults">
-      <div id="centerHeader">
+    <section>
+      <div>
         {activities.length < 2 ? (
           <h2>{activities.length} ACTIVITY</h2>
         ) : (
@@ -44,9 +44,7 @@ function Activities() {
         )}
       </div>
       {activities.map((item, idx) => (
-        <div key={idx} className="oneMsg">
-          {writeOneActivity(item)}
-        </div>
+        <div key={idx}>{writeOneActivity(item)}</div>
       ))}
     </section>
   );
